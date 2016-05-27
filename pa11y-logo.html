@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	 	<meta charset="utf-8">
+
+		<title>pa11y logo</title>
+		<meta name="description" content="Pa11y">
+		<meta name="author" content="Pa11y">
+
+		<style>
+			body { margin: 30px 0 0 30px; padding: 0; }
+
+			.number-one, .number-two {
+				height: 306px;
+				width: 72px;
+				float: left;
+				position: relative;
+				border-radius: 0 8px 8px 8px;
+				z-index: 1;
+			}
+
+			.number-one:before, .number-two:before, .shadow1, .shadow2 {
+				content: "";
+				display: block;
+				position: absolute;
+			}
+
+			.number-one:before, .number-two:before {
+				width: 37px;
+				height: 63px;
+				top: 0;
+				left: -36px;
+				border-radius: 8px 0 0 8px;
+			}
+
+			.blue, .blue:before { background-color: #3498db; }
+
+			.yellow, .yellow:before { background-color: #f39c12; }
+
+			.red { background-color: #e74c3c; }
+
+			.number-one { margin-left: 37px; }
+
+			.number-two {
+				height: 135px;
+				margin-left: 45px;
+			}
+
+			.across {
+				position: absolute;
+				top: 151px;
+				left: 59px;
+				width: 205px;
+				height: 74px;
+				background-color: #e74c3c;
+				transform: rotate(-23deg) skew(-23deg);
+				z-index: 5;
+				border-radius: 0 0 8px 0;
+			}
+
+			.shadow1 {
+				height: 17px;
+				width: 72px;
+				top: 116px;
+				left: 183px;
+				background-color: #925e0b;
+				transform: rotate(-13deg) skew(-13deg);
+				z-index: 2;
+			}
+
+			.shadow2 {
+				height: 17px;
+				width: 73px;
+				top: 242px;
+				left: 67px;
+				background-color: #1f5b83;
+				transform: rotate(-13deg) skew(-13deg);
+				z-index: 2;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="number-one blue"></div>
+		<div class="number-two yellow"></div>
+		<div class="across red"></div>
+		<div class="shadow1"></div>
+		<div class="shadow2"></div>
+	</body>
+</html>
